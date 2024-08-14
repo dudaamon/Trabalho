@@ -1,15 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); /* importando a fonte */
 
 * {
+  /* css reset e fonte padrão */
   margin: 0;
   padding: 0;
-}
-
-:root {
   --fonte: "Montserrat", sans-serif;
 }
 
 body {
   box-sizing: border-box;
-  background-color: #eeeeee;
+  background-color: #ffd9d9;
+}
+
+/* cabeçalho do body */
+
+header {
+  background-color: #a91d3a;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10rem;
+  font-family: var(--fonte);
+}
+
+.cabecalho_logo .logo {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.cabecalho_menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cabecalho_menu_link {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+/* corpo do body */
+
+main {
+  margin: 5rem;
+}
+
+main .apresentacao {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+.apresentacao_imagem {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 5rem;
+}
+
+.apresentacao_conteudo {
+  font-family: var(--fonte);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.apresentacao_conteudo_titulo {
+  color: #C73659;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.apresentacao_conteudo_texto {
+  color: #151515;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 6rem;
+  line-height: 1.4;
 }
