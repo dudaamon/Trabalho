@@ -4,12 +4,12 @@
   /* css reset e fonte padrão */
   margin: 0;
   padding: 0;
-  --fonte: "Montserrat", sans-serif;
 }
 
 body {
   box-sizing: border-box;
   background-color: #ffd9d9;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* cabeçalho do body */
@@ -23,7 +23,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 10rem;
-  font-family: var(--fonte);
 }
 
 .cabecalho_logo .logo {
@@ -46,11 +45,19 @@ header {
   font-size: 1.8rem;
 }
 
+.cabecalho_menu_link:hover {
+  color: #ffd9d9;
+  transition: color 0.3s;
+  transform: scale(1.1);
+}
+
 /* corpo do body */
 
 main {
   margin: 5rem;
 }
+
+/* index.html */
 
 main .apresentacao {
   display: flex;
@@ -68,7 +75,6 @@ main .apresentacao {
 }
 
 .apresentacao_conteudo {
-  font-family: var(--fonte);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +82,7 @@ main .apresentacao {
 }
 
 .apresentacao_conteudo_titulo {
-  color: #C73659;
+  color: #c73659;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
@@ -90,4 +96,30 @@ main .apresentacao {
   text-align: justify;
   padding: 0 6rem;
   line-height: 1.4;
+}
+
+/* formacao.html */
+
+.formacao_conteudo {
+  display: flex;
+  gap: 1rem;
+}
+
+.formacao_titulo {
+  color: #c73659;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.formacao_conteudo_texto {
+  color: #151515;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 2rem;
+  box-sizing: border-box;
+  flex: 1;
 }
