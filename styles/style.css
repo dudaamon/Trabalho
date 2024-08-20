@@ -121,6 +121,8 @@ main .apresentacao {
   line-height: 1.4;
   padding: 2rem;
   box-sizing: border-box;
+  max-width: 1200px;
+  text-align: justify;
   flex: 1;
 }
 
