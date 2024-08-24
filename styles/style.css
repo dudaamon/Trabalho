@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 10rem;
+  padding: 3rem 10rem;
 }
 
 .cabecalho_logo .logo {
@@ -170,3 +170,54 @@ h3 {
 }
 
 /* contateme.html */
+
+.formulario_titulo {
+  color: #c73659;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.formulario_conteudo {
+  margin: auto;
+  width: 30rem;
+  padding: 2rem;
+  background-color: #fff7f7;
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 1.5rem;
+}
+
+.input_text {
+  width: 95%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  border: none;
+  outline-color: #ffb7c8;
+  border-radius: 5px;
+  background-color: #ffd9d9;
+  color: #3f3939;
+  font-size: 1.2rem;
+  cursor: pointer;
+} 
+
+.formulario_botao {
+  width: 98%;
+  padding: 0.5rem;
+  margin-top: 2rem;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #c73659;
+  color: #fff7f7;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
