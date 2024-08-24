@@ -192,12 +192,12 @@ h3 {
   font-size: 1.5rem;
 }
 
-.input_text {
+#input_text {
   width: 95%;
   padding: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
+
   border: none;
   outline-color: #ffb7c8;
   border-radius: 5px;
@@ -207,7 +207,21 @@ h3 {
   cursor: pointer;
 } 
 
-.formulario_botao {
+#textarea_mensagem {
+  width: 95%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  border: none;
+  outline-color: #ffb7c8;
+  border-radius: 5px;
+  background-color: #ffd9d9;
+  color: #3f3939;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#formulario_botao {
   width: 98%;
   padding: 0.5rem;
   margin-top: 2rem;

@@ -28,14 +28,18 @@
         <form class="formulario_conteudo">
           <div>
             <label for="nome" class="label">Nome:</label>
-            <input type="text" class="input_text" />
+            <input type="text" id="input_text" required />
           </div>
           <div>
             <label for="email" class="label">E-mail:</label>
-            <input type="text" class="input_text" />
+            <input type="text" id="input_text" required />
           </div>
           <div>
-            <input type="submit" class="formulario_botao" value="Enviar" />
+            <label for="mensagem" class="label">Mensagem:</label>
+            <textarea rows="3" name="msg" id="textarea_mensagem" required></textarea>
+          </div>
+          <div>
+            <input type="submit" id="formulario_botao" value="Enviar" />
           </div>
         </form>
     </main>
