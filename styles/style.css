@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); /* importando a fonte */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); /* IMPORTANDO A FONTE */
+
+/* CSS RESET E DEFINIÇÃO DE PADRÕES PARA O BODY */
 
 * {
-  /* css reset e fonte padrão */
   margin: 0;
   padding: 0;
 }
@@ -12,7 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* cabeçalho do body */
+/* CABEÇALHO COM LINKS */
 
 header {
   background-color: #a91d3a;
@@ -52,6 +53,8 @@ header {
   transform: scale(1.1);
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
+
 @media screen and (max-width: 1100px) {
   .cabecalho {
     padding: 1.5rem 5rem;
@@ -81,13 +84,13 @@ header {
   }
 }
 
-/* corpo do body */
+/* CONTEÚDO DA PÁGINA */
 
 main {
   margin: 5rem;
 }
 
-/* index.html */
+/* INDEX.HTML */
 
 main .apresentacao {
   display: flex;
@@ -128,6 +131,8 @@ main .apresentacao {
   line-height: 1.4;
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
+
 @media screen and (max-width: 900px) {
   main .apresentacao {
     flex-direction: column-reverse;
@@ -151,7 +156,7 @@ main .apresentacao {
   }
 }
 
-/* formacao.html */
+/* FORMACAO.HTML */
 
 .formacao_conteudo {
   display: flex;
@@ -179,6 +184,8 @@ main .apresentacao {
   flex: 1;
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
+
 @media screen and (max-width: 900px) {
   .formacao_conteudo {
     flex-direction: column-reverse;
@@ -197,7 +204,7 @@ main .apresentacao {
   }
 }
 
-/* projetos.html */
+/* PROJETOS.HTML */
 
 .projetos_titulo {
   color: #c73659;
@@ -240,6 +247,8 @@ h3 {
   color: #c73659;
 }
 
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
+
 @media screen and (max-width: 900px) {
   .projetos_conteudo {
     flex-direction: column-reverse;
@@ -256,7 +265,7 @@ h3 {
   }
 }
 
-/* contateme.html */
+/* CONTATO.HTML */
 
 .formulario_titulo {
   color: #c73659;
@@ -322,6 +331,8 @@ h3 {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE  */
 
 @media screen and (max-width: 900px) {
   .formulario_conteudo {
