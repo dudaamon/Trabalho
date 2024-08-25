@@ -21,6 +21,7 @@ header {
 .cabecalho {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   align-items: center;
   padding: 3rem 10rem;
 }
@@ -49,6 +50,35 @@ header {
   color: #ffd9d9;
   transition: color 0.3s;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+  .cabecalho {
+    padding: 1.5rem 5rem;
+  }
+
+  .cabecalho_logo .logo {
+    font-size: 1.5rem;
+  }
+
+  .cabecalho_menu,
+  .cabecalho_menu_link {
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho_logo .logo {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .cabecalho_menu,
+  .cabecalho_menu_link {
+    gap: 0.5rem;
+    font-size: 0.6rem;
+  }
 }
 
 /* corpo do body */
@@ -98,6 +128,29 @@ main .apresentacao {
   line-height: 1.4;
 }
 
+@media screen and (max-width: 900px) {
+  main .apresentacao {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .apresentacao_imagem {
+    max-width: 270px;
+    margin: auto;
+  }
+
+  .apresentacao_conteudo_titulo {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao_conteudo_texto {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
 /* formacao.html */
 
 .formacao_conteudo {
@@ -124,6 +177,24 @@ main .apresentacao {
   max-width: 1200px;
   text-align: justify;
   flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .formacao_conteudo {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .formacao_titulo {
+    font-size: 1.5rem;
+  }
+
+  .formacao_conteudo_texto {
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
 
 /* projetos.html */
@@ -169,6 +240,22 @@ h3 {
   color: #c73659;
 }
 
+@media screen and (max-width: 900px) {
+  .projetos_conteudo {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .projetos_titulo {
+    font-size: 1.5rem;
+  }
+
+  .projeto {
+    font-size: 1rem;
+  }
+}
+
 /* contateme.html */
 
 .formulario_titulo {
@@ -205,7 +292,7 @@ h3 {
   color: #3f3939;
   font-size: 1.2rem;
   cursor: pointer;
-} 
+}
 
 #textarea_mensagem {
   width: 95%;
@@ -234,4 +321,22 @@ h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .formulario_conteudo {
+    margin: auto;
+    width: 10rem;
+    padding: 2rem;
+  }
+
+  .formulario_titulo {
+    font-size: 1.5rem;
+  }
+
+  .label, #input_text {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
 }
